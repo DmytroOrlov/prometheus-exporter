@@ -6,7 +6,7 @@ import io.prometheus.client._
 import io.prometheus.client.hotspot._
 import io.prometheus.client.logback.InstrumentedAppender.{COUNTER_NAME => LogCounterName}
 
-import scala.collection.JavaConverters._
+import scala.jdk.CollectionConverters._
 
 
 /** Wrapper around Prometheus' collector registry
