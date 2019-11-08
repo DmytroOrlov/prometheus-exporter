@@ -1,7 +1,7 @@
 import sbt._
 
 object Dependencies {
-  private val prometheusVersion = "0.0.26"
+  private val prometheusVersion = "0.8.0"
 
   private val scalaLoggingVersion = "3.9.2"
 
@@ -14,7 +14,7 @@ object Dependencies {
   lazy val logging = "com.typesafe.scala-logging" %% "scala-logging" % scalaLoggingVersion
 
   object Akka {
-    private val akkaHttpVersion = "10.1.8"
+    private val akkaHttpVersion = "10.1.10"
 
     val Http = "com.typesafe.akka" %% "akka-http" % akkaHttpVersion
     val HttpTestKit = "com.typesafe.akka" %% "akka-http-testkit" % akkaHttpVersion

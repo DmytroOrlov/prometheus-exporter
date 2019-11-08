@@ -5,7 +5,7 @@ val prometheusExporter = project.in(file("."))
   .settings(
     inThisBuild(List(
       organization := "com.evolutiongaming",
-      scalaVersion := "2.13.0",
+      scalaVersion := "2.13.1",
       developers := List(Developer("stas", "Stas", "stass.ua@gmail.com", url("https://www.linkedin.com/in/stas-shevchenko-916b7a16"))),
       scmInfo := Some(ScmInfo(url("https://github.com/evolution-gaming/prometheus-exporter"), "scm:git:git@github.com:evolution-gaming/prometheus-exporter.git")),
     )),
@@ -28,8 +28,8 @@ val prometheusExporter = project.in(file("."))
     organizationName := "Evolution Gaming",
     organizationHomepage := Some(url("http://evolutiongaming.com")),
     libraryDependencies ++= Seq(
-      "com.typesafe.akka" %% "akka-stream" % "2.5.23",
-      "com.typesafe.akka" %% "akka-stream-testkit" % "2.5.23" % Test,
+      "com.typesafe.akka" %% "akka-stream" % "2.5.26",
+      "com.typesafe.akka" %% "akka-stream-testkit" % "2.5.26" % Test,
       prometheusCommonClient, prometheusHotspotClient, simpleClientLogback, logging,
       Akka.Http, Akka.HttpTestKit % Test, scalatest % Test, pegdown % Test) map Dependencies.excludeLog4j,
     testOptions in Test ++= Seq(
